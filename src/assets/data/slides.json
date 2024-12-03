@@ -1,30 +1,36 @@
 [
   {
+    "key": "1",
     "title": "Slide 1",
     "description": "This is the description for slide 1.",
     "image": "https://swiperjs.com/demos/images/nature-1.jpg"
   },
   {
+    "key": "2",
     "title": "Slide 2",
     "description": "This is the description for slide 2.",
     "image": "https://swiperjs.com/demos/images/nature-2.jpg"
   },
   {
+    "key": "3",
     "title": "Slide 3",
     "description": "This is the description for slide 3.",
     "image": "https://swiperjs.com/demos/images/nature-3.jpg"
   },
   {
+    "key": "4",
     "title": "Slide 4",
     "description": "This is the description for slide 4.",
     "image": "https://swiperjs.com/demos/images/nature-4.jpg"
   },
   {
+    "key": "5",
     "title": "Slide 5",
     "description": "This is the description for slide 5.",
     "image": "https://swiperjs.com/demos/images/nature-5.jpg"
   },
   {
+    "key": "6",
     "title": "Slide 6",
     "description": "This is the description for slide 6.",
     "image": "https://swiperjs.com/demos/images/nature-6.jpg"
