@@ -1,13 +1,18 @@
 import { FC } from "react";
-import { Button, Typography } from "antd";
+import { Button, Flex, Typography } from "antd";
 import { ISlide } from "../models/slide";
 
 interface SlideProps {
     slide: ISlide;
-}  
+    active: number;
+    total: number;
+    goto: (slideIndex: number) => void;
+    onPrev: () => void;
+    onNext: () => void;
+}
 
 const { Title, Paragraph } = Typography;
-const CustomSlide: FC<SlideProps> = ({ slide }) => {
+const CustomSlide: FC<SlideProps> = ({ slide, active, total, onPrev, onNext }) => {
 
     return (
         <div className={`slide-container content-${slide.key}`}>
@@ -17,7 +22,10 @@ const CustomSlide: FC<SlideProps> = ({ slide }) => {
                     {slide.title}
                 </Title>
                 <Paragraph className="slide-description">{slide.description}</Paragraph>
-                <Button type="primary">Learn More</Button>
+                <Flex justify="space-between" align="center">
+                    {active !== 0 && (<Button type="primary" onClick={onPrev}>Back</Button>)}
+                    {active + 1 !== total && (<Button type="primary" onClick={onNext}>Next</Button>)}
+                </Flex>
             </div>
         </div>
     );
