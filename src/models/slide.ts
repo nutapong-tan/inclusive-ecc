@@ -1,6 +1,7 @@
 export interface ISlide {
     key: string;
+    image?: string;
     title?: string;
     description?: string;
-    image?: string;
+    details?: any
 }

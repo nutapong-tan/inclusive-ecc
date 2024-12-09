@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Slideshow from './components/Slideshow';
+import Slideshow from './components/SlideShows';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
