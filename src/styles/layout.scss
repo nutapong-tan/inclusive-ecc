@@ -17,3 +17,17 @@ body {
   width: 100vw !important;
   height: 100vh !important;
 }
+
+.facebook-btn {
+  width: 100%;
+  background-color: #4267B2 !important;
+  color: white !important;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
